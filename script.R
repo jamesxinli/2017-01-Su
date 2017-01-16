@@ -6,6 +6,7 @@ abline(lm(x$NR4A2~x$SNCA),col="blue",lwd=5)
 lines(lowess(x$SNCA,x$NR4A2),col="red",lwd=5)
 
 
+
 sink("regression.txt")
 summary(lm(x$NR4A2~x$SNCA))
 sink()
